@@ -7,10 +7,11 @@
 
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-    Hello Python!
+    Restaurant Page
+    <a href="{% url 'restaurant-sign-out' %}">Log out</a>
 </body>
 </html>
