@@ -13,7 +13,9 @@
 <body>
     <form method="POST" enctype="multipart/form-data">
       {% csrf_token %}
-      <button type="submit">Restaurant Sign Up</button>
+      {{ user_form }}
+      {{ restaurant_form }}
+      <button type="submit">Sign Up</button>
     </form>
 
 </body>
