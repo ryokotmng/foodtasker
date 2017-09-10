@@ -1,0 +1,11 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "jsmidgen": {
+      "version": "0.1.5",
+      "resolved": "https://registry.npmjs.org/jsmidgen/-/jsmidgen-0.1.5.tgz",
+      "integrity": "sha1-rQr9Y3XrEvUQZAJTk847rsOAWF0="
+    }
+  }
+}
