@@ -25,7 +25,7 @@ SECRET_KEY = 'ven-=5had0zkna)3tp_-7m^hfcg4em-c2)fa&*%3c7206(*_*8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://food-tasker.herokuapp.com/', 'localhost']
 
 
 # Application definition
