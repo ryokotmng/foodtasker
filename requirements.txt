@@ -1,6 +1,6 @@
 Django==1.11.4
 gunicorn==19.6.0
 Pillow==3.3.0
-whitenoise-3.2.1
-dj-database-url-0.4.2
+whitenoise==3.2.1
+dj-database-url==0.4.2
 psycopg2==2.6.2
