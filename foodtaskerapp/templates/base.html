@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home page</title>
+  <title>{% block title %}{% endblock %}</title>
 
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -11,7 +11,7 @@
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-    Restaurant Page
-    <a href="{% url 'restaurant-sign-out' %}">Log out</a>
+    {% block sidebar %}{% endblock %}
+    {% block page %}{% endblock %}
 </body>
 </html>
