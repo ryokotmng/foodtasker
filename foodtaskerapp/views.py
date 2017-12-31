@@ -9,7 +9,7 @@ def home(request):
 
 @login_required(login_url='/restaurant/sign-in/')
 def restaurant_home(request):
-    return render(request, 'restaurant/home.html', {})
+    return redirect(restaurant_order)
 
 @login_required(login_url='/restaurant/sign-in/')
 def restaurant_account(request):
