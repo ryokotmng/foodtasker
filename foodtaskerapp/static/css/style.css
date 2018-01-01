@@ -4,6 +4,10 @@ body {
   overflow: auto;
 }
 
+.text-white {
+  color: white;
+}
+
 .bg-blue {
   background-color: #3F3F63;
 }
@@ -99,4 +103,8 @@ body {
 /* CONTENT */
 .content {
   padding: 0 40px;
+}
+
+.content .panel {
+  border: none;
 }
