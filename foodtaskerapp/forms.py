@@ -1,7 +1,7 @@
 from django import forms
 
 from django.contrib.auth.models import User
-from foodtaskerapp.models import Restaurant
+from foodtaskerapp.models import Restaurant, Meal
 
 class UserForm(forms.ModelForm):
     email = forms.CharField(max_length=100, required=True)
