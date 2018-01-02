@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from foodtaskerapp.forms import UserForm, RestaurantForm, UserFormForEdit, MealForm
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
+from foodtaskerapp.models import Meal
 
 def home(request):
     return redirect(restaurant_home)
