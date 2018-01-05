@@ -11,3 +11,12 @@ def customer_get_restaurants(request):
     ).data
 
     return JsonResponse({"restaurants": restaurants})
+
+def customer_get_meals(request):
+    return JsonResponse({})
+
+def customer_add_order(request):
+    return JsonResponse({})
+
+def customer_get_latest_order(request):
+    return JsonResponse({})
