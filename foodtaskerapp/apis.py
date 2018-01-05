@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 
-from foodtaskerapp.models import Restaurant
-from foodtaskerapp.serializers import RestaurantSerializer
+from foodtaskerapp.models import Restaurant, Meal
+from foodtaskerapp.serializers import RestaurantSerializer, MealSerializer
 
 def customer_get_restaurants(request):
     restaurants = RestaurantSerializer(
