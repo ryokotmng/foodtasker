@@ -25,11 +25,12 @@ urlpatterns = [
     url(r'^restaurant/meal/edit/(?P<meal_id>\d+)/$', views.restaurant_edit_meal, name = 'restaurant-edit-meal'),
     url(r'^restaurant/order/$', views.restaurant_order, name = 'restaurant-order'),
     url(r'^restaurant/report/$', views.restaurant_report, name = 'restaurant-report'),
-    
+
     # Sign In/ Sign Up/ Sign Out
     url(r'^api/social/', include('rest_framework_social_oauth2.urls')),
     # /convert-token (sign in/ sign up)
     # /revoke-token (sign out)
+    url(r'^api/restaurant/order/notification/(?P<last_request_time>.+)/$', apis.restaurant_order_notification),
     url(r'^api/customer/restaurants/$', apis.customer_get_restaurants),
     url(r'^api/customer/meals/(?P<restaurant_id>\d+)/$', apis.customer_get_meals),
     url(r'^api/customer/order/add/$', apis.customer_add_order),
