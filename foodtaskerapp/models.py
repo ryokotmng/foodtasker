@@ -55,7 +55,7 @@ class Order(models.Model):
 
     customer = models.ForeignKey(Customer)
     restaurant = models.ForeignKey(Restaurant)
-    driver = models.ForeignKey(Driver)
+    driver = models.ForeignKey(Driver, blank = True, null = True)
     address = models.CharField(max_length=500)
     total = models.IntegerField()
     status = models.IntegerField(choices = STATUS_CHOICES)
