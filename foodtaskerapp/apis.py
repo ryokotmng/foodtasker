@@ -27,7 +27,7 @@ def customer_get_meals(request, restaurant_id):
     return JsonResponse({"meals": meals})
 
 @csrf_exempt
-def customer_add_order(request, restaurant_id):
+def customer_add_order(request):
 
     if request.method == "POST":
         # Get token
