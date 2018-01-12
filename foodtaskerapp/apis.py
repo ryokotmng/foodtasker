@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from oauth2_provider.models import AccessToken
 
-from foodtaskerapp.models import Restaurant, Meal, Order, OrderDetails
+from foodtaskerapp.models import Restaurant, Meal, Order, OrderDetails, Driver
 from foodtaskerapp.serializers import RestaurantSerializer, MealSerializer, OrderSerializer
 
 def customer_get_restaurants(request):
