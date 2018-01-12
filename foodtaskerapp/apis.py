@@ -101,10 +101,10 @@ def driver_get_ready_orders(request):
 # POST
 # params: access_token, order_id
 def driver_pick_order(request):
-        if request.method == "POST":
-          # Get token
+    if request.method == "POST":
+        # Get token
         access_token = AccessToken.objects.get(token = request.POST.get("access_token"),
-            expires__gt = timezone.now())
+        expires__gt = timezone.now())
 
         # Get Driver
         driver = access_token.user.driver
