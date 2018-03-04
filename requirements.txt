@@ -6,3 +6,4 @@ dj-database-url==0.4.2
 psycopg2==2.6.2
 django-rest-framework-social-oauth2==1.0.8
 django-bootstrap3==9.1.0
+stripe==1.79.1
