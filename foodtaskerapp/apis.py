@@ -74,7 +74,7 @@ def customer_add_order(request):
                                     
             if charge.status != "failed":
             # Step 2 - Create an Order
-            order = Order.objects.create(
+                order = Order.objects.create(
                 customer = customer,
                 restaurant_id = request.POST["restaurant_id"],
                 total = order_total,
